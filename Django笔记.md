@@ -14,4 +14,18 @@
     - (win)activate env_name
   - pip install django==版本号
   
-  ## 后台需要的流程
+ ## 后台需要的流程
+<div align="center"><img src="./picture/Django流程图.png" height="" /></div>
+
+ ## 第一个Django项目
+ - django-admin startproject 项目名：创建项目
+ <div align="center"><img src="./picture/django-admin.png" height="" /></div>
+ 
+ <div align="center"><img src="./picture/Helloworld.png" height="" /></div>
+ 
+- HelloWorld: 项目的容器。
+- manage.py: 一个实用的命令行工具，可让你以各种方式与该 Django 项目进行交互。
+- HelloWorld/__init__.py: 一个空文件，告诉 Python 该目录是一个 Python 包。
+- HelloWorld/settings.py: 该 Django 项目的设置/配置。
+- HelloWorld/urls.py: 该 Django 项目的 URL 声明; 一份由 Django 驱动的网站"目录"。
+- HelloWorld/wsgi.py: 一个 WSGI 兼容的 Web 服务器的入口，以便运行你的项目。

@@ -38,5 +38,19 @@
 ## 路由系统-urls
 - 分析请求，然后找到具体的业务（APP）去处理
 - django的信息控制中枢
-- 在接受URL请求的匹配上使用RE
+- 在接受URL请求的匹配上使用RE(正则表达式)
+<div align="center"><img src="./picture/urls.png" height="" /></div>
 
+- url
+  - 第一个参数是匹配的字符串
+  - 第二个参数是解决方法的位置
+- 正则的匹配规则
+  - 正则以r开头，表示不需要转义
+  - 尖号(^)表示匹配以什么开头
+  - 美元符号($)表示匹配以什么结尾
+    - '/one/two/three' 配对 r'^one/'
+    - '/oo/one/two/three' 不配对 r'^one/'
+    - '/one/two/three' 配对 r'three/$'
+    - '/one/two/three/oo/' 不配对 r'three/$'
+    - 开头不需要有反斜杠
+ 
